@@ -2,15 +2,24 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(
       MaterialApp(
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text("Welcome to my Home"),
-            centerTitle: true,
-            backgroundColor: Colors.green,
-          ),
-          body: Center(
-            child: Text("Hello Rapxang"),
-          ),
-        ),
+        home: Home(),
       ),
     );
+
+class Home extends StatelessWidget {
+  const Home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Book My Game"),
+        centerTitle: true,
+        backgroundColor: Colors.green,
+      ),
+      body: Center(
+        child: Image.asset('assets/images/Futsal.jpg'),
+      ),
+    );
+  }
+}
