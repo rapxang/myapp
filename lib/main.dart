@@ -17,9 +17,60 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
-      body: Center(
-        child: Image.asset('assets/images/Futsal.jpg'),
-      ),
+      body:Column(
+        children: [
+          SizedBox(
+            height: 50,
+          ),
+          Center(
+            child: Image.asset('assets/images/Futsal.jpg'),
+          ),
+          ElevatedButton.icon(   // <-- ElevatedButton
+            onPressed: () {},
+            icon: Icon(
+              Icons.download,
+              size: 24.0,
+            ),
+            label: Text('Download'),
+          ),
+          TextButton.icon(     // <-- TextButton
+            onPressed: () {},
+            icon: Icon(
+              Icons.download,
+              size: 24.0,
+            ),
+            label: Text('Download'),
+          ),
+          OutlinedButton.icon( // <-- OutlinedButton
+            onPressed: () {},
+            icon: Icon(
+              Icons.download,
+              size: 24.0,
+            ),
+            label: Text('Download'),
+          ),
+          SizedBox.fromSize(
+            size: Size(56, 56),
+            child: ClipOval(
+              child: Material(
+                color: Colors.amberAccent,
+                child: InkWell(
+                  splashColor: Colors.green,
+                  onTap: () {},
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Icon(Icons.shopping_cart), // <-- Icon
+                      Text("Buy"), // <-- Text
+                    ],
+                  ),
+                ),
+              ),
+            ),
+          )
+        ],
+      )
+
     );
   }
 }
