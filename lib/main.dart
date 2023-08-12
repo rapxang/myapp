@@ -13,7 +13,7 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Book My Game"),
+        title: Text("Book My Game of futsal"),
         centerTitle: true,
         backgroundColor: Colors.green,
       ),
